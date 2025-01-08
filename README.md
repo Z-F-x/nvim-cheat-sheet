@@ -10,7 +10,8 @@ Add at the end of the file: `vim.g.autoformat = false`
 Go to `~/.config/nvim/lua/plugins`
 Create a new file called `cmp.lua`
 Add the following and save to file:
-`vim.cmd([[filetype plugin indent off]])
+
+` vim.cmd([[filetype plugin indent off]])
 return {
     "hrsh7th/nvim-cmp",
 
@@ -19,4 +20,4 @@ return {
             autocomplete = false, -- Disable automatic completion
         },
     },
-}`
+} `

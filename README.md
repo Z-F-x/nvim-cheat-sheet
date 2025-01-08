@@ -12,11 +12,11 @@ Create a new file called `cmp.lua`
 Add the following and save to file:
 
 `vim.cmd([[filetype plugin indent off]])`\
-`return {`\
-    `"hrsh7th/nvim-cmp",`\
-   ` opts = {`\
-       ` completion = {`\
-         `   autocomplete = false, -- Disable automatic completion`\
-     `   },`\
- `   },`\
+`    return {`\
+`    "hrsh7th/nvim-cmp",`\
+`   opts = {`\
+`        completion = {`\
+`            autocomplete = false, -- Disable automatic completion`\
+`        },`\
+`    },`\
 `}`

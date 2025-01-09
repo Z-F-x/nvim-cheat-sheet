@@ -33,11 +33,10 @@ Enter this into the file:
 `  },`\
 `}`
 
-Remove `autocomplete = false, -- Disable automatic completion` if present
+Remove `autocomplete = false` if present
 
 Go to `~/.config/nvim` and open `init.lua`
-Enter this before any instance of `-- bootstrap lazy.nvim, LazyVim or your plugins
-require("config.lazy").` 
+Enter this before any instance of `require("config.lazy").` 
 
 `-- Function to toggle autocomplete`\
 `function Toggle_SuggestionDropdown()`\
@@ -54,8 +53,7 @@ require("config.lazy").`
 `vim.api.nvim_set_keymap('n', '<leader>s', ':lua Toggle_SuggestionDropdown()<CR>', { noremap = true, silent = true })`
 
 ### Note
-If you have multiple hotkey scripts like that disable or enable certain plugins this you have to keep the line `-- bootstrap lazy.nvim, LazyVim or your plugins
-require("config.lazy").` after said scripts.
+If you have multiple hotkey scripts like that disable or enable certain plugins this you have to keep the line `require("config.lazy").` after said scripts.
 
 ### Usage
 The scripts adds `s` as an option in the `leader` hotkey menu. `leader` referes to the custom hotkey modifier key which by default is `\` and in this setup is also `\`. You can see what your `leader`-key is with pressing `shift` `+` `:` and running: `:h mapleader` in the Cmdline / Command line mode.

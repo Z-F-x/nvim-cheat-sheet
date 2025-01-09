@@ -26,6 +26,9 @@ Add the following and save to file:
 
 This setup is for `nb` (Norwegian Bokmål) and `nn` (Norwegian Nynorsk). Just change these values to the correct UTF-8 language code of your language. 
 
+### Installation
+Put the following in your `init.lua` file found in `~/.config/nvim`:
+
 `-- Set default options for spell checking`\
 `vim.opt.spell = true            -- Enable spell checking by default`\
 `vim.opt.spelllang = { "nb" } -- Set Norwegian Bokmål as the default spell language`

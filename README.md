@@ -52,3 +52,15 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
+
+### Usage
+
+When pressing `\` a dropdown will appear with all your custom keybindings tied to `leader` or in this case `\`:
+
+![image](https://github.com/user-attachments/assets/4b203ea7-3fdd-4041-b4f4-e0c7d12b0bf0)
+
+`t` is set for toggling between the two languages:
+
+![image](https://github.com/user-attachments/assets/1e7bccc7-20d4-40e4-b0fe-4425cb272a1c)
+
+

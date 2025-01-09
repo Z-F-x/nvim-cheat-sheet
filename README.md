@@ -22,8 +22,9 @@ Add the following and save to file:
 `    },`\
 `}`
 
-## Setup for autocomplete toggle hotkey of autocomplete suggestion dropdown menu
+## Toggle hotkey of autocomplete suggestion dropdown menu
 #### Note: This is for a LazyVim default plugin setup.
+##### This affects suggestions, copilot any kind of autocomplete.
 Go to `~/.config/nvim/lua/plugins`
 Create a new file called `cmp.lua` if you haven't already.
 Enter this into the file: 

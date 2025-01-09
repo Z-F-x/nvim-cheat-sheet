@@ -7,6 +7,7 @@ Go to: `~/.config/nvim/lua/config/options.lua`
 Add at the end of the file: `vim.g.autoformat = false`
 
 ## How to disable autocomplete suggestion dropdown menu
+#### Note: This is for a LazyVim default plugin setup.
 Go to `~/.config/nvim/lua/plugins`
 Create a new file called `cmp.lua`
 Add the following and save to file:
@@ -22,6 +23,7 @@ Add the following and save to file:
 `}`
 
 ## Setup for autocomplete toggle hotkey of autocomplete suggestion dropdown menu
+#### Note: This is for a LazyVim default plugin setup.
 Go to `~/.config/nvim/lua/plugins`
 Create a new file called `cmp.lua` if you haven't already.
 Enter this into the file: 
@@ -113,6 +115,7 @@ Hit `t` for toggling between the two languages:
 ![image](https://github.com/user-attachments/assets/1e7bccc7-20d4-40e4-b0fe-4425cb272a1c)
 
 ## Setup for > 2 (more than two) languages 
+#### Note: This is for a LazyVim default plugin setup.
 `leader` referes to the custom hotkey modifier key which by default is `\` and in this setup is also `\`. You can see what your `leader`-key is with pressing `shift` `+` `:` and running: `:h mapleader` in the Cmdline / Command line mode.
 
 This setup is for `nb` (Norwegian Bokmål), `nn` (Norwegian Nynorsk), and `en` (English). Just change these values to the correct UTF-8 language code of your language. You can add more languages if you want, the script cycle repeats from bottom to top (when at bottom and you run the hotkey it repeats from the top).

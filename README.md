@@ -57,8 +57,13 @@ Enter this before any instance of `require("config.lazy").`
 `        print("Autocomplete Enabled")`\
 `    end`\
 `end`
-
-### Note
+`-- Map the toggle function to a hotkey (e.g., <leader>s)`
+`vim.api.nvim_set_keymap('n', '<leader>s', ':lua Toggle_SuggestionDropdown()<CR>', { noremap = true, silent = true })`
+`-- bootstrap lazy.nvim, LazyVim or your plugins`
+`require("config.lazy")`
+### Note 1 
+Remove `-- bootstrap lazy.nvim, LazyVim or your plugins` and  `require("config.lazy")` if you already have an instance of it.
+### Note 2
 If you have multiple hotkey scripts like that disable or enable certain plugins this you have to keep the line `require("config.lazy").` after said scripts.
 
 ### Usage

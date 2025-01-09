@@ -63,7 +63,7 @@ You will be prompted to download and install language packs and suggestion packs
 
 ### Usage
 
-When pressing `\` a dropdown will appear with all your custom keybindings tied to `leader` or in this case `\`:
+When pressing `\` a message box will appear with all a list of your custom keybindings tied to `leader` or in this case `\`:
 
 ![image](https://github.com/user-attachments/assets/4b203ea7-3fdd-4041-b4f4-e0c7d12b0bf0)
 
@@ -112,7 +112,8 @@ You will be prompted to download and install language packs and suggestion packs
 
 ### Usage
 
-When pressing `\` a dropdown will appear with all your custom keybindings tied to `leader` or in this case `\`:
+When pressing `\` a message box will appear with all a list of your custom keybindings tied to `leader` or in this case `\`:
+
 ![image](https://github.com/user-attachments/assets/bf3ff641-d661-40b6-b34d-dc0b3fdd5911)
 
 

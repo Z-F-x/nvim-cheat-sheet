@@ -41,19 +41,22 @@ Remove `autocomplete = false` if present
 Go to `~/.config/nvim` and open `init.lua`
 Enter this before any instance of `require("config.lazy").` 
 
-`-- Function to toggle autocomplete`\
+`-- Function to toggle autocomplete on and off`\
 `function Toggle_SuggestionDropdown()`\
-`    if _G.autocomplete_enabled == true then`\
+`    -- Check the current state of cmp autocomplete for the buffer`\
+`    local cmp_state = require('cmp').get_config().enabled`\
+
+`    -- Toggle the enabled state of cmp autocomplete for the current buffer`\
+`    if cmp_state then`\
 `        -- Disable autocomplete`\
-`        _G.autocomplete_enabled = false`\
-`  end`\
-`    if  _G.autocomplete_enabled == false then`\
+`        require('cmp').setup.buffer { enabled = false }`\
+`        print("Autocomplete Disabled")`\
+`    else`\
 `        -- Enable autocomplete`\
-`        _G.autocomplete_enabled = true`\
+`        require('cmp').setup.buffer { enabled = true }`\
+`        print("Autocomplete Enabled")`\
 `    end`\
-`end`\
-`-- Map the toggle function to a hotkey (e.g., <leader>s)`\
-`vim.api.nvim_set_keymap('n', '<leader>s', ':lua Toggle_SuggestionDropdown()<CR>', { noremap = true, silent = true })`
+`end`
 
 ### Note
 If you have multiple hotkey scripts like that disable or enable certain plugins this you have to keep the line `require("config.lazy").` after said scripts.

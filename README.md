@@ -51,7 +51,4 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 `Toggle_spelllang()`
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
-`vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`\
-`-- bootstrap lazy.nvim, LazyVim and your plugins`\
-`require("config.lazy")`
-
+`vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`

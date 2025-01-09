@@ -26,29 +26,29 @@ Add the following and save to file:
 
 This setup is for `nb` (Norwegian Bokmål) and `nn` (Norwegian Nynorsk). Just change these values to the correct UTF-8 language code of your language. 
 
-`-- Set default options for spell checking`
-`vim.opt.spell = true            -- Enable spell checking by default`
-`vim.opt.spelllang = { "nb" } -- Set Norwegian Bokmål as the default spell language`
+`-- Set default options for spell checking`\
+`vim.opt.spell = true            -- Enable spell checking by default`\
+`vim.opt.spelllang = { "nb" } -- Set Norwegian Bokmål as the default spell language`\
 
 
-`-- Function to toggle between Norwegian Bokmål and Nynorsk for spell checking`
-`function Toggle_spelllang()`
-`  local current_lang = vim.opt.spelllang:get()[1]  -- Get the current spell language`
+`-- Function to toggle between Norwegian Bokmål and Nynorsk for spell checking`\
+`function Toggle_spelllang()`\
+`  local current_lang = vim.opt.spelllang:get()[1]  -- Get the current spell language`\
 
-`  if current_lang == "nb" then`
-`    vim.opt.spelllang = { "nn" }  -- Switch to Nynorsk`
-`    print("Switched to Nynorsk (nn)")`
-`  else`
-`    vim.opt.spelllang = { "nb" }  -- Switch to Bokmål`
-`    print("Switched to Bokmål (nb)")`
-`  end`
-`end`
+`  if current_lang == "nb" then`\
+`    vim.opt.spelllang = { "nn" }  -- Switch to Nynorsk`\
+`    print("Switched to Nynorsk (nn)")`\
+`  else`\
+`    vim.opt.spelllang = { "nb" }  -- Switch to Bokmål`\
+`    print("Switched to Bokmål (nb)")`\
+`  end`\
+`end`\
 
-`-- Call the function on file load to ensure it's set to Bokmål initially`
-`Toggle_spelllang()`
+`-- Call the function on file load to ensure it's set to Bokmål initially`\
+`Toggle_spelllang()`\
 
-`-- Map the function to a hotkey (for example, <leader>t to toggle)`
-`vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
-`-- bootstrap lazy.nvim, LazyVim and your plugins`
+`-- Map the function to a hotkey (for example, <leader>t to toggle)`\
+`vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`\
+`-- bootstrap lazy.nvim, LazyVim and your plugins`\
 `require("config.lazy")`
 

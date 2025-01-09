@@ -27,6 +27,10 @@ Add the following and save to file:
 This setup is for `nb` (Norwegian Bokmål) and `nn` (Norwegian Nynorsk). Just change these values to the correct UTF-8 language code of your language. 
 
 ### Installation
+
+`-- bootstrap lazy.nvim, LazyVim or your plugins
+require("config.lazy")`
+
 Put the following in your `init.lua` file found in `~/.config/nvim`:
 
 `-- Set default options for spell checking`\
@@ -52,6 +56,8 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
+`-- bootstrap lazy.nvim, LazyVim or your plugins`
+`require("config.lazy")`
 
 You will be prompted to download and install language packs and suggestion packs if you don't have them. Confirm each download and installation with pressing `enter` for each prompt.
 
@@ -61,9 +67,7 @@ When pressing `\` a dropdown will appear with all your custom keybindings tied t
 
 ![image](https://github.com/user-attachments/assets/4b203ea7-3fdd-4041-b4f4-e0c7d12b0bf0)
 
-`t` is set for toggling between the two languages:
-
-
+Hit `t` for toggling between the two languages:
 
 ![image](https://github.com/user-attachments/assets/1e7bccc7-20d4-40e4-b0fe-4425cb272a1c)
 
@@ -101,5 +105,20 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
+`-- bootstrap lazy.nvim, LazyVim or your plugins`
+`require("config.lazy")`
 
 You will be prompted to download and install language packs and suggestion packs if you don't have them. Confirm each download and installation with pressing `enter` for each prompt.
+
+### Usage
+
+When pressing `\` a dropdown will appear with all your custom keybindings tied to `leader` or in this case `\`:
+![image](https://github.com/user-attachments/assets/bf3ff641-d661-40b6-b34d-dc0b3fdd5911)
+
+
+Hit `t` for cycling between the languages:
+
+![image](https://github.com/user-attachments/assets/c0806157-aa6f-4e6b-a697-cd67ba8101ac)
+
+
+

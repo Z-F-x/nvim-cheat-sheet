@@ -28,12 +28,12 @@ This setup is for `nb` (Norwegian Bokmål) and `nn` (Norwegian Nynorsk). Just ch
 
 `-- Set default options for spell checking`\
 `vim.opt.spell = true            -- Enable spell checking by default`\
-`vim.opt.spelllang = { "nb" } -- Set Norwegian Bokmål as the default spell language`\
+`vim.opt.spelllang = { "nb" } -- Set Norwegian Bokmål as the default spell language`
 
 
 `-- Function to toggle between Norwegian Bokmål and Nynorsk for spell checking`\
 `function Toggle_spelllang()`\
-`  local current_lang = vim.opt.spelllang:get()[1]  -- Get the current spell language`\
+`  local current_lang = vim.opt.spelllang:get()[1]  -- Get the current spell language`
 
 `  if current_lang == "nb" then`\
 `    vim.opt.spelllang = { "nn" }  -- Switch to Nynorsk`\
@@ -42,10 +42,10 @@ This setup is for `nb` (Norwegian Bokmål) and `nn` (Norwegian Nynorsk). Just ch
 `    vim.opt.spelllang = { "nb" }  -- Switch to Bokmål`\
 `    print("Switched to Bokmål (nb)")`\
 `  end`\
-`end`\
+`end`
 
 `-- Call the function on file load to ensure it's set to Bokmål initially`\
-`Toggle_spelllang()`\
+`Toggle_spelllang()`
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`\

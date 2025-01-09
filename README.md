@@ -1,4 +1,4 @@
-# nvim-cheat-sheet
+d# nvim-cheat-sheet
 Useful tricks &amp; tips for nvim problems
 
 ## How to disable autoindentation on save
@@ -53,6 +53,8 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
 
+You will be prompted to download and install language packs and suggestion packs if you don't have them. Confirm each download and installation with pressing `enter` for each prompt.
+
 ### Usage
 
 When pressing `\` a dropdown will appear with all your custom keybindings tied to `leader` or in this case `\`:
@@ -68,7 +70,7 @@ When pressing `\` a dropdown will appear with all your custom keybindings tied t
 ## Setup for > 2 (more than two) languages 
 `leader` referes to the custom hotkey modifier key which by default is `\` and in this setup is also `\`. You can see what your `leader`-key is with pressing `shift` `+` `:` and running: `:h mapleader` in the Cmdline / Command line mode.
 
-This setup is for `nb` (Norwegian Bokmål), `nn` (Norwegian Nynorsk), and `en_us` (American English). Just change these values to the correct UTF-8 language code of your language. You can add more languages if you want, the script cycle repeats from bottom to top (when at bottom and you run the hotkey it repeats from the top).
+This setup is for `nb` (Norwegian Bokmål), `nn` (Norwegian Nynorsk), and `en` (English). Just change these values to the correct UTF-8 language code of your language. You can add more languages if you want, the script cycle repeats from bottom to top (when at bottom and you run the hotkey it repeats from the top).
 
 ### Installation
 Put the following in your `init.lua` file found in `~/.config/nvim`:
@@ -99,3 +101,5 @@ Put the following in your `init.lua` file found in `~/.config/nvim`:
 
 `-- Map the function to a hotkey (for example, <leader>t to toggle)`\
 `vim.api.nvim_set_keymap('n', '<leader>t', ':lua Toggle_spelllang()<CR>', { noremap = true, silent = true })`
+
+You will be prompted to download and install language packs and suggestion packs if you don't have them. Confirm each download and installation with pressing `enter` for each prompt.

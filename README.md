@@ -21,6 +21,49 @@ Add the following and save to file:
 `    },`\
 `}`
 
+## Setup for autocomplete toggle hotkey of autocomplete suggestion dropdown menu
+Go to `~/.config/nvim/lua/plugins`
+Create a new file called `cmp.lua` if you haven't already.
+Enter this into the file: 
+`return {`\
+`  "hrsh7th/nvim-cmp",`
+
+`  opts = {`\
+`    completion = {},`\
+`  },`\
+`}`
+
+Remove `autocomplete = false, -- Disable automatic completion` if present
+
+Go to `~/.config/nvim` and open `init.lua`
+Enter this before any instance of `-- bootstrap lazy.nvim, LazyVim or your plugins
+require("config.lazy").` 
+
+`-- Function to toggle autocomplete`\
+`function Toggle_SuggestionDropdown()`\
+`    if _G.autocomplete_enabled == true then`\
+`        -- Disable autocomplete`\
+`        _G.autocomplete_enabled = false`\
+`  end`\
+`    if  _G.autocomplete_enabled == false then`\
+`        -- Enable autocomplete`\
+`        _G.autocomplete_enabled = true`\
+`    end`\
+`end`\
+`-- Map the toggle function to a hotkey (e.g., <leader>s)`\
+`vim.api.nvim_set_keymap('n', '<leader>s', ':lua Toggle_SuggestionDropdown()<CR>', { noremap = true, silent = true })`
+
+### Note
+If you have multiple hotkey scripts like that disable or enable certain plugins this you have to keep the line `-- bootstrap lazy.nvim, LazyVim or your plugins
+require("config.lazy").` after said scripts.
+
+### Usage
+The scripts adds `s` as an option in the `leader` hotkey menu. `leader` referes to the custom hotkey modifier key which by default is `\` and in this setup is also `\`. You can see what your `leader`-key is with pressing `shift` `+` `:` and running: `:h mapleader` in the Cmdline / Command line mode.
+
+Hit `\` and `s` to toggle:
+![image](https://github.com/user-attachments/assets/b01b8ae6-5e78-4125-aa4c-7cfd7f56e223)
+
+
 ## Setup for dual language support toggle hotkey
 `leader` referes to the custom hotkey modifier key which by default is `\` and in this setup is also `\`. You can see what your `leader`-key is with pressing `shift` `+` `:` and running: `:h mapleader` in the Cmdline / Command line mode.
 

@@ -1,6 +1,9 @@
-d# nvim-cheat-sheet
+# nvim-cheat-sheet
 Useful tricks &amp; tips for nvim problems
 
+## Paste from clip board before text
+`g` + `shift` + `p`
+ 
 ## How to disable autoindentation on save
 Go to: `~/.config/nvim/lua/config/options.lua` 
 

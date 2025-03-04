@@ -1,6 +1,38 @@
 # nvim-cheat-sheet
 Useful tricks &amp; tips for nvim problems
 
+## Panes / Popup menus
+```Ctrl + [``` +prev\
+```Ctrl + ]``` +next\
+```Ctrl + w``` +window\
+```g``` +goto\
+``` ␣``` ␣ 
+
+`z` +fold\
+`c` +Change
+```Ctrl + Shift + >```+Indent right\
+```Ctrl + Shift + <```+Indent left\
+
+`o` insert new line\
+`y` +Yank Text\
+`t` toggle some kind of formatting
+
+## Scrolling with keyboard only
+- Ctrl+e → Scroll down by one line
+- Ctrl+y → Scroll up by one line
+- Ctrl+d → Scroll down by half a screen
+- Ctrl+u → Scroll up by half a screen
+- Ctrl+f → Scroll down by a full screen
+- Ctrl+b → Scroll up by a full screen
+
+## Keyboard + Mouse motions
+
+### Follow Variable or function to caller
+
+```Ctrl + right click```
+
+
+
 ## Paste from clip board before text
 `g` + `shift` + `p`
  
